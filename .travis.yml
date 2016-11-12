@@ -5,6 +5,9 @@ rvm:
   - '2.2.5'
   - ruby-head
 
+cache:
+  bundler: true
+
 matrix:
   allow_failures:
     - rvm: ruby-head
