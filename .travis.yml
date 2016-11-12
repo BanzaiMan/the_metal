@@ -1,0 +1,17 @@
+language: ruby
+
+rvm:
+  - '2.3.1'
+  - '2.2.5'
+  - ruby-head
+
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+
+install:
+  - bundle install
+
+script:
+  - bundle exec rake
+
